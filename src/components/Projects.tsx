@@ -1,6 +1,81 @@
-import React, { useState, useEffect } from 'react';
+'''import React, { useState, useEffect } from 'react';
 import { ExternalLink, Github, Brain, Smartphone, Globe, Database, X, ChevronLeft, ChevronRight, Search, BarChart3, AppWindow, AppWindowIcon, LucideAppWindow, TruckIcon, BarChart2, BarChart4, SmartphoneIcon } from 'lucide-react';
-import AprendizadoContinuoChecklist from './components/AprendizadoContinuoChecklist';
+import AprendizadoContinuoChecklist from './AprendizadoContinuoChecklist';
+
+import dashboardev from '../../assets/dashboardev.jpg';
+import dashboardDevolucoes1 from '../../assets/1DASHBOARD_DEVOLUCOES_MODELO_1.png';
+import dashboardDevolucoes2 from '../../assets/2DASHBOARD_DEVOLUCOES_MODELO_1.png';
+import dashboardDevolucoes3 from '../../assets/3DASHBOARD_DEVOLUCOES_MODELO_1.png';
+import dashboardDevolucoes4 from '../../assets/4DASHBOARD_DEVOLUCOES_MODELO_1.png';
+import dashboardDevolucoes5 from '../../assets/5DASHBOARD_DEVOLUCOES_MODELO_1.png';
+import gestaoFretesThumb from '../../assets/3primeira.png';
+import gestaoFretes1 from '../../assets/1.png';
+import gestaoFretes2 from '../../assets/2.png';
+import gestaoFretes4 from '../../assets/4.png';
+import relatorioGestaoFretes from '../../assets/Relatorio_Gestao_Fretes_Ex.pdf';
+import logisticaReversaThumb from '../../assets/22.png';
+import logisticaReversa1 from '../../assets/11.png';
+import logisticaReversa2 from '../../assets/33.png';
+import logisticaReversa3 from '../../assets/44.png';
+import logisticaReversa4 from '../../assets/55.png';
+import logisticaReversa5 from '../../assets/66.png';
+import logisticaReversa6 from '../../assets/77.png';
+import relatorioLogisticaReversa from '../../assets/relatorio_logistica_reversa.pdf';
+import dashboardPerdasThumb from '../../assets/1DASHBOARD_PERDAS_MODELO_2.png';
+import dashboardPerdas1 from '../../assets/2DASHBOARD_PERDAS_MODELO_2.png';
+import biperdas from '../../assets/biperdas.pdf';
+import dashboardDevolucoesExcel from '../../assets/1DASHBOARD_DEVOLUCOES_MODELO_EXCEL.png';
+import devolucoesExcel from '../../assets/Devoluções_Lançadas_excel.xlsm';
+import crossdockingThumb from '../../assets/1print.png';
+import crossdocking1 from '../../assets/2print.png';
+import crossdocking2 from '../../assets/3print.png';
+import crossdocking3 from '../../assets/4print.png';
+import renThumb from '../../assets/REN.png';
+import dashboardDDEThumb from '../../assets/1DASHBOARD_DDE_MODELO_BI.png';
+import dashboardDDE1 from '../../assets/2DASHBOARD_DDE_MODELO_BI.png';
+import dashboardDDE2 from '../../assets/3DASHBOARD_DDE_MODELO_BI.png';
+import dashboardDDE3 from '../../assets/4DASHBOARD_DDE_MODELO_BI.png';
+import expedicaoThumb from '../../assets/111.png';
+import expedicao1 from '../../assets/222.png';
+import expedicao2 from '../../assets/333.png';
+import expedicao3 from '../../assets/444.png';
+import expedicao4 from '../../assets/555.png';
+import relatorioExpedicao from '../../assets/Relatório_Expedição.pdf';
+import canhotosThumb from '../../assets/n1.png';
+import canhotos1 from '../../assets/n2.png';
+import canhotos2 from '../../assets/n3.png';
+import canhotos3 from '../../assets/n4.png';
+import canhotos4 from '../../assets/n5.png';
+import canhotos5 from '../../assets/n6.png';
+import canhotos6 from '../../assets/n7.png';
+import canhotos7 from '../../assets/n8.png';
+import canhotos8 from '../../assets/n9.png';
+import relatorioPorCliente from '../../assets/relatorio_por_cliente.pdf';
+import despesasFretesThumb from '../../assets/d1.png';
+import despesasFretes1 from '../../assets/d2.png';
+import despesasFretes2 from '../../assets/d3.png';
+import despesasFretes3 from '../../assets/d4.png';
+import bifrete from '../../assets/bifrete.pdf';
+import gestaoEntregasThumb from '../../assets/e1.png';
+import gestaoEntregas1 from '../../assets/e2.png';
+import gestaoEntregas2 from '../../assets/e3.png';
+import gestaoEntregas3 from '../../assets/e4.png';
+import gestaoEntregas4 from '../../assets/e5.png';
+import gestaoEntregas5 from '../../assets/e6.png';
+import gestaoEntregas6 from '../../assets/e7.png';
+import gestaoEntregas7 from '../../assets/e8.png';
+import gestaoEntregas8 from '../../assets/e9.png';
+import gestaoEntregas9 from '../../assets/e10.png';
+import gestaoEntregas10 from '../../assets/e11.png';
+import gestaoEntregas11 from '../../assets/e12.png';
+import gestaoEntregas12 from '../../assets/e13.png';
+import gestaoEntregas13 from '../../assets/e14.png';
+import gestaoEntregas14 from '../../assets/e15.png';
+import gestaoEntregas15 from '../../assets/e16.png';
+import gestaoEntregas16 from '../../assets/e17.png';
+import gestaoEntregas17 from '../../assets/e18.png';
+import fundoProjetos from '../../assets/fundotelaprojetos.png';
+
 
 const Projects = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -16,13 +91,13 @@ const Projects = () => {
       id: 1,
       title: "Dashboard de Indicadores KPI's",
       description: "Dashboard completo com visualizações de dados logísticos, relatórios e métricas de performance.",
-      image: "/assets/dashboardev.jpg",
+      image: dashboardev,
       images: [
-        "/assets/1DASHBOARD_DEVOLUCOES_MODELO_1.png",
-        "/assets/2DASHBOARD_DEVOLUCOES_MODELO_1.png",
-        "/assets/3DASHBOARD_DEVOLUCOES_MODELO_1.png",
-        "/assets/4DASHBOARD_DEVOLUCOES_MODELO_1.png",
-        "/assets/5DASHBOARD_DEVOLUCOES_MODELO_1.png"
+        dashboardDevolucoes1,
+        dashboardDevolucoes2,
+        dashboardDevolucoes3,
+        dashboardDevolucoes4,
+        dashboardDevolucoes5
       ],
       technologies: ["Power BI", "DAX", "Database"],
       category: "Business Intelligence",
@@ -35,17 +110,17 @@ const Projects = () => {
       id: 2,
       title: "Sistema de Gestão de Fretes",
       description: "Aplicativo web para gerenciamento de fretes, com registros e controle de custos logísticos.",
-      image: "/assets/3primeira.png",
+      image: gestaoFretesThumb,
       images: [
-        "/assets/3primeira.png",
-        "/assets/1.png",
-        "/assets/2.png",
-        "/assets/4.png"
+        gestaoFretesThumb,
+        gestaoFretes1,
+        gestaoFretes2,
+        gestaoFretes4
       ],
       technologies: ["IA", "JavaScript", "HTML/CSS", "CSV", "Database", "Processos Logísticos", "Relatórios"],
       category: "Logística (AppWeb)",
       icon: AppWindow,
-      demoUrl: "/assets/Relatorio_Gestao_Fretes_Ex.pdf",
+      demoUrl: relatorioGestaoFretes,
       codeUrl: "#",
       featured: true
     },
@@ -53,20 +128,20 @@ const Projects = () => {
       id: 3,
       title: "Sistema de Controle de Logística Reversa",
       description: "Sistema para gerenciamento de Retornos de ativos, trocas e processos de logística reversa.",
-      image: "/assets/22.png",
+      image: logisticaReversaThumb,
       images: [
-        "/assets/22.png",
-        "/assets/11.png",
-        "/assets/33.png",
-        "/assets/44.png",
-        "/assets/55.png",
-        "/assets/66.png",
-        "/assets/77.png"
+        logisticaReversaThumb,
+        logisticaReversa1,
+        logisticaReversa2,
+        logisticaReversa3,
+        logisticaReversa4,
+        logisticaReversa5,
+        logisticaReversa6
       ],
       technologies: ["IA", "JavaScript", "HTML/CSS", "CSV", "Database", "Processos Logísticos", "Relatórios"],
       category: "Logística (AppWeb)",
       icon: AppWindow,
-      demoUrl: "/assets/relatorio_logistica_reversa.pdf",
+      demoUrl: relatorioLogisticaReversa,
       codeUrl: "#",
       featured: true
     },
@@ -110,15 +185,15 @@ const Projects = () => {
       id: 7,
       title: "Dashboard - Resultado de Perdas",
       description: "Dashboard interativo para análise e controle de perdas, com comparativos temporais e categóricos.",
-      image: "/assets/1DASHBOARD_PERDAS_MODELO_2.png",
+      image: dashboardPerdasThumb,
       images: [
-        "/assets/1DASHBOARD_PERDAS_MODELO_2.png",
-        "/assets/2DASHBOARD_PERDAS_MODELO_2.png"
+        dashboardPerdasThumb,
+        dashboardPerdas1
       ],
       technologies: ["Power BI", "DAX", "Database"],
       category: "Business Intelligence",
       icon: BarChart4,
-      demoUrl: "/assets/biperdas.pdf",
+      demoUrl: biperdas,
       codeUrl: "#",
       featured: true
     },
@@ -126,14 +201,14 @@ const Projects = () => {
       id: 8,
       title: "Dashboard - Resultado das Devoluções",
       description: "Dashboard desenvolvido em Excel para análise e controle de devoluções, trocas e processos de logística reversa.",
-      image: "/assets/1DASHBOARD_DEVOLUCOES_MODELO_EXCEL.png",
+      image: dashboardDevolucoesExcel,
       images: [
-        "/assets/1DASHBOARD_DEVOLUCOES_MODELO_EXCEL.png"
+        dashboardDevolucoesExcel
       ],
       technologies: ["Excel", "VBA", "Power Query", "Gráficos Dinâmicos"],
       category: "Excel",
       icon: BarChart4,
-      demoUrl: "/assets/Devoluções_Lançadas_excel.xlsm",
+      demoUrl: devolucoesExcel,
       codeUrl: "#",
       featured: true
     },
@@ -141,12 +216,12 @@ const Projects = () => {
       id: 9,
       title: "Sistema de Registros de CrossDocking",
       description: "Aplicação web para registro, controle e acompanhamento de operações de CrossDocking, otimizando processos logísticos.",
-      image: "/assets/1print.png",
+      image: crossdockingThumb,
       images: [
-        "/assets/1print.png",
-        "/assets/2print.png",
-        "/assets/3print.png",
-        "/assets/4print.png"
+        crossdockingThumb,
+        crossdocking1,
+        crossdocking2,
+        crossdocking3
       ],
       technologies: ["IA", "JavaScript", "HTML/CSS", "CSV", "Database", "Processos Logísticos", "Relatórios"],
       category: "Logística (AppWeb)",
@@ -159,9 +234,9 @@ const Projects = () => {
       id: 10,
       title: "Aplicativo Web Renomeador e Separador de NF",
       description: "Aplicativo web para renomear e separar Notas Fiscais em PDF de forma automática e eficiente.",
-      image: "/assets/REN.png",
+      image: renThumb,
       images: [
-        "/assets/REN.png"
+        renThumb
       ],
       technologies: ["React", "JavaScript", "PDF.js", "Node.js"],
       category: "Automação",
@@ -174,12 +249,12 @@ const Projects = () => {
       id: 11,
       title: "Dashboard - DDE dos Produtos",
       description: "Dashboard interativo em Power BI para análise de DDE (Dias de Estoque) dos produtos, com visualização de tendências e indicadores.",
-      image: "/assets/1DASHBOARD_DDE_MODELO_BI.png",
+      image: dashboardDDEThumb,
       images: [
-        "/assets/1DASHBOARD_DDE_MODELO_BI.png",
-        "/assets/2DASHBOARD_DDE_MODELO_BI.png",
-        "/assets/3DASHBOARD_DDE_MODELO_BI.png",
-        "/assets/4DASHBOARD_DDE_MODELO_BI.png"
+        dashboardDDEThumb,
+        dashboardDDE1,
+        dashboardDDE2,
+        dashboardDDE3
       ],
       technologies: ["Power BI", "DAX", "Database"],
       category: "Business Intelligence",
@@ -192,18 +267,18 @@ const Projects = () => {
       id: 12,
       title: "Controle de Expedição",
       description: "Aplicativo para controle, acompanhamento e registro de expedição de mercadorias, com visualização de etapas e comprovantes.",
-      image: "/assets/111.png",
+      image: expedicaoThumb,
       images: [
-        "/assets/111.png",
-        "/assets/222.png",
-        "/assets/333.png",
-        "/assets/444.png",
-        "/assets/555.png"
+        expedicaoThumb,
+        expedicao1,
+        expedicao2,
+        expedicao3,
+        expedicao4
       ],
       technologies: ["IA", "JavaScript", "HTML/CSS", "CSV", "Database", "Processos Logísticos", "Relatórios"],
       category: "Logística (AppWeb)",
       icon: AppWindow,
-      demoUrl: "/assets/Relatório_Expedição.pdf",
+      demoUrl: relatorioExpedicao,
       codeUrl: "#",
       featured: true
     },
@@ -211,22 +286,22 @@ const Projects = () => {
       id: 13,
       title: "Aplicativo Web - Gestão de Canhotos",
       description: "Aplicativo web para controle, registro e gestão de canhotos de entrega, com visualização e download de comprovantes.",
-      image: "/assets/n1.png",
+      image: canhotosThumb,
       images: [
-        "/assets/n1.png",
-        "/assets/n2.png",
-        "/assets/n3.png",
-        "/assets/n4.png",
-        "/assets/n5.png",
-        "/assets/n6.png",
-        "/assets/n7.png",
-        "/assets/n8.png",
-        "/assets/n9.png"
+        canhotosThumb,
+        canhotos1,
+        canhotos2,
+        canhotos3,
+        canhotos4,
+        canhotos5,
+        canhotos6,
+        canhotos7,
+        canhotos8
       ],
       technologies: ["IA", "JavaScript", "HTML/CSS", "CSV", "Database", "Processos Logísticos", "Relatórios"],
       category: "Logística (AppWeb)",
       icon: AppWindow,
-      demoUrl: "/assets/relatorio_por_cliente.pdf",
+      demoUrl: relatorioPorCliente,
       codeUrl: "#",
       featured: true
     },
@@ -234,17 +309,17 @@ const Projects = () => {
       id: 14,
       title: "Dashboard - Despesas de Fretes",
       description: "Dashboard para análise e acompanhamento das despesas de fretes, com visualização de relatórios e gráficos.",
-      image: "/assets/d1.png",
+      image: despesasFretesThumb,
       images: [
-        "/assets/d1.png",
-        "/assets/d2.png",
-        "/assets/d3.png",
-        "/assets/d4.png"
+        despesasFretesThumb,
+        despesasFretes1,
+        despesasFretes2,
+        despesasFretes3
       ],
       technologies: ["Power BI", "DAX", "Database"],
       category: "Business Intelligence",
       icon: BarChart4,
-      demoUrl: "/assets/bifrete.pdf",
+      demoUrl: bifrete,
       codeUrl: "#",
       featured: true
     },
@@ -252,26 +327,26 @@ const Projects = () => {
       id: 15,
       title: "Aplicativo Web - Gestão de Entregas",
       description: "Aplicativo web responsivo para mobile, com foco em gestão de entregas, com 3 tipos de usuarios (admin, colaborador, motorista).",
-      image: "/assets/e1.png",
+      image: gestaoEntregasThumb,
       images: [
-        "/assets/e1.png",
-        "/assets/e2.png",
-        "/assets/e3.png",
-        "/assets/e4.png",
-        "/assets/e5.png",
-        "/assets/e6.png",
-        "/assets/e7.png",
-        "/assets/e8.png",
-        "/assets/e9.png",
-        "/assets/e10.png",
-        "/assets/e11.png",
-        "/assets/e12.png",
-        "/assets/e13.png",
-        "/assets/e14.png",
-        "/assets/e15.png",
-        "/assets/e16.png",
-        "/assets/e17.png",
-        "/assets/e18.png"
+        gestaoEntregasThumb,
+        gestaoEntregas1,
+        gestaoEntregas2,
+        gestaoEntregas3,
+        gestaoEntregas4,
+        gestaoEntregas5,
+        gestaoEntregas6,
+        gestaoEntregas7,
+        gestaoEntregas8,
+        gestaoEntregas9,
+        gestaoEntregas10,
+        gestaoEntregas11,
+        gestaoEntregas12,
+        gestaoEntregas13,
+        gestaoEntregas14,
+        gestaoEntregas15,
+        gestaoEntregas16,
+        gestaoEntregas17
       ],
       technologies: ["React", "Node.js", "Javascript", "HTML", "CSS", "Supabase", "Firebase"],
       category: "Logística",
@@ -336,7 +411,7 @@ const Projects = () => {
   return (
     <div className="py-20 bg-gray-900 relative">
       <img 
-        src="/assets/fundotelaprojetos.png"
+        src={fundoProjetos}
         alt="Fundo de projetos"
         className="absolute inset-0 w-full h-full object-cover z-0 opacity-10"
       />
@@ -567,4 +642,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Projects;'''

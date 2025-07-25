@@ -1,12 +1,15 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Download, Brain, Code, Database, FileBox, Table2, AppWindow, LucideAreaChart, LucideGanttChartSquare, LucideGanttChart, LucideBarChart, LucideAxe, LucideCombine, PieChart, LucideTruck, TruckIcon, SlashSquare, SparklesIcon, Truck, DollarSignIcon, MonitorIcon, Cog, FileCog2, FileCog, LucideFileCog2 } from 'lucide-react';
+import logistic1fundo from '../../assets/logistic1fundo.webp';
+import fotoperfil from '../../assets/fotoperfil.png';
+import curriculo from '../../assets/curriculo_teste.pdf';
 
 const Hero = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-emerald-900/20 relative overflow-hidden">
       {/* Background Image */}
       <img
-        src="/assets/logistic1fundo.webp"
+        src={logistic1fundo}
         alt="Fundo logístico"
         className="absolute inset-0 w-full h-full object-cover z-0"
         style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -23,7 +26,7 @@ const Hero = () => {
             <div className="w-32 h-32 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 p-1 shadow-2xl">
               <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center">
                 <img 
-                  src="/assets/fotoperfil.png" 
+                  src={fotoperfil} 
                   alt="Obedys Júnio" 
                   className="w-full h-full object-cover"
                   style={{ objectPosition: 'center 1%' , marginRight: '10%' }}
@@ -81,7 +84,7 @@ const Hero = () => {
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <a 
-              href="/assets/curriculo_teste.pdf" 
+              href={curriculo} 
               download="Obedys_Junio_Curriculo.pdf"
               className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 justify-center shadow-lg hover:shadow-emerald-500/25 transform hover:scale-105"
             >

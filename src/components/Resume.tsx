@@ -1,5 +1,6 @@
 import React from 'react';
 import { Download, MapPin, Mail, Phone, Calendar, Award, Briefcase } from 'lucide-react';
+import curriculo from '../../assets/curriculo_teste.pdf';
 
 const Resume = () => {
   return (
@@ -14,7 +15,7 @@ const Resume = () => {
             Minha experiência profissional, formação acadêmica e principais conquistas
           </p>
           <a 
-            href="/assets/curriculo_teste.pdf" 
+            href={curriculo} 
             download="Obedys_Junio_Curriculo.pdf"
             className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-lg font-medium transition-all duration-200 flex items-center gap-2 justify-center shadow-lg hover:shadow-emerald-500/25 transform hover:scale-105"
           >
