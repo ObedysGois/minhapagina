@@ -1,4 +1,4 @@
-'''import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ExternalLink, Github, Brain, Smartphone, Globe, Database, X, ChevronLeft, ChevronRight, Search, BarChart3, AppWindow, AppWindowIcon, LucideAppWindow, TruckIcon, BarChart2, BarChart4, SmartphoneIcon } from 'lucide-react';
 import AprendizadoContinuoChecklist from './AprendizadoContinuoChecklist';
 
@@ -642,4 +642,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;'''
+export default Projects;
