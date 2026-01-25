@@ -1,11 +1,12 @@
 import React from 'react';
-import { Code, Database, Brain, Settings, Layout, Server, Terminal, Workflow } from 'lucide-react';
+import { Code, Database, Brain, Settings } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
     {
       title: "Sistemas & ERP",
       icon: Database,
+      color: "forest",
       skills: [
         { name: "TOTVS Protheus", level: 90 },
         { name: "SAP (Conceitos)", level: 60 },
@@ -16,6 +17,7 @@ const Skills = () => {
     {
       title: "Business Intelligence",
       icon: Brain,
+      color: "petrol",
       skills: [
         { name: "Power BI", level: 85 },
         { name: "DAX & M Query", level: 75 },
@@ -24,8 +26,9 @@ const Skills = () => {
       ]
     },
     {
-      title: "Desenvolvimento & Automação",
+      title: "Automação & Soluções Digitais",
       icon: Code,
+      color: "steel",
       skills: [
         { name: "JavaScript / TypeScript", level: 60 },
         { name: "React.js", level: 55 },
@@ -36,6 +39,7 @@ const Skills = () => {
     {
       title: "Processos & Gestão",
       icon: Settings,
+      color: "forest",
       skills: [
         { name: "BPMN (Mapeamento)", level: 80 },
         { name: "Metodologia Ágil (Scrum)", level: 70 },
@@ -54,41 +58,57 @@ const Skills = () => {
     "Adaptabilidade"
   ];
 
+  const getProgressColor = (color: string) => {
+    switch (color) {
+      case 'forest': return 'bg-forest-500';
+      case 'petrol': return 'bg-petrol-500';
+      default: return 'bg-steel-500';
+    }
+  };
+
+  const getIconBg = (color: string) => {
+    switch (color) {
+      case 'forest': return 'bg-forest-900/40 text-forest-400';
+      case 'petrol': return 'bg-petrol-900/40 text-petrol-400';
+      default: return 'bg-steel-800/60 text-steel-400';
+    }
+  };
+
   return (
-    <div className="py-24 bg-slate-900">
+    <div className="py-24 bg-graphite-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-50">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-steel-50 font-heading">
             Habilidades & Competências
           </h2>
-          <div className="w-20 h-1.5 bg-emerald-500 rounded-full mb-8"></div>
-          <p className="text-lg text-slate-400 max-w-3xl">
-            Um conjunto equilibrado de competências técnicas e comportamentais focadas em 
+          <div className="section-divider mb-8"></div>
+          <p className="text-lg text-steel-400 max-w-3xl">
+            Um conjunto equilibrado de competências técnicas e comportamentais focadas em
             entregar valor e inovação para o negócio.
           </p>
         </div>
 
         {/* Hard Skills Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {skillCategories.map((category, idx) => (
-            <div key={idx} className="bg-slate-800/50 rounded-xl p-6 border border-slate-700 hover:border-emerald-500/30 transition-colors">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="p-2 bg-slate-900 rounded-lg text-emerald-400">
-                  <category.icon size={24} />
+            <div key={idx} className="card-corporate p-5">
+              <div className="flex items-center gap-3 mb-5">
+                <div className={`p-2 rounded-lg ${getIconBg(category.color)}`}>
+                  <category.icon size={20} />
                 </div>
-                <h3 className="text-lg font-bold text-slate-100">{category.title}</h3>
+                <h3 className="text-base font-semibold text-steel-100">{category.title}</h3>
               </div>
-              
+
               <div className="space-y-4">
                 {category.skills.map((skill) => (
                   <div key={skill.name}>
-                    <div className="flex justify-between mb-1">
-                      <span className="text-sm text-slate-300">{skill.name}</span>
-                      <span className="text-xs text-slate-500">{skill.level}%</span>
+                    <div className="flex justify-between mb-1.5">
+                      <span className="text-sm text-steel-300">{skill.name}</span>
+                      <span className="text-xs text-steel-500">{skill.level}%</span>
                     </div>
-                    <div className="h-1.5 bg-slate-700 rounded-full overflow-hidden">
-                      <div 
-                        className="h-full bg-emerald-500 rounded-full"
+                    <div className="h-1.5 bg-steel-800 rounded-full overflow-hidden">
+                      <div
+                        className={`h-full rounded-full ${getProgressColor(category.color)}`}
                         style={{ width: `${skill.level}%` }}
                       ></div>
                     </div>
@@ -100,16 +120,14 @@ const Skills = () => {
         </div>
 
         {/* Soft Skills */}
-        <div className="bg-slate-800 rounded-2xl p-8 md:p-12 border border-slate-700 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-          
-          <h3 className="text-2xl font-bold text-slate-100 mb-8 relative z-10">Soft Skills & Diferenciais</h3>
-          
-          <div className="flex flex-wrap gap-4 relative z-10">
+        <div className="card-corporate p-8 md:p-10">
+          <h3 className="text-xl font-semibold text-steel-100 mb-6">Soft Skills & Diferenciais</h3>
+
+          <div className="flex flex-wrap gap-3">
             {softSkills.map((skill, index) => (
-              <div 
+              <div
                 key={index}
-                className="px-6 py-3 bg-slate-900 rounded-lg border border-slate-700 text-slate-300 font-medium hover:border-emerald-500/50 hover:text-emerald-400 transition-colors cursor-default"
+                className="px-5 py-2.5 bg-graphite-950 rounded border border-steel-700/50 text-steel-300 font-medium text-sm hover:border-forest-600/50 hover:text-forest-400 transition-colors"
               >
                 {skill}
               </div>

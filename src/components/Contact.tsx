@@ -3,113 +3,107 @@ import { Mail, Phone, MapPin, Linkedin, Github, Send } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <div className="py-24 bg-slate-900 relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
-      </div>
-
+    <div className="py-24 bg-graphite-950 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
           {/* Text Info */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-50">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-steel-50 font-heading">
               Vamos Conversar?
             </h2>
-            <div className="w-20 h-1.5 bg-emerald-500 rounded-full mb-8"></div>
-            
-            <p className="text-lg text-slate-300 mb-12 leading-relaxed">
-              Estou sempre em busca de novos desafios e oportunidades para aplicar minha experiência 
-              em análise de dados e otimização logística. Se sua empresa busca eficiência e inovação, 
+            <div className="section-divider mb-8"></div>
+
+            <p className="text-lg text-steel-300 mb-10 leading-relaxed">
+              Estou sempre em busca de novos desafios e oportunidades para aplicar minha experiência
+              em análise de dados e otimização logística. Se sua empresa busca eficiência e inovação,
               entre em contato.
             </p>
 
-            <div className="space-y-6">
-              <a 
-                href="mailto:obedysjunio@email.com" 
-                className="flex items-center gap-4 p-4 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-emerald-500/50 hover:bg-slate-800 transition-all group"
+            <div className="space-y-4">
+              <a
+                href="mailto:obedysjunio@email.com"
+                className="flex items-center gap-4 p-4 card-corporate group"
               >
-                <div className="p-3 bg-emerald-500/10 rounded-lg group-hover:bg-emerald-500/20 transition-colors">
-                  <Mail className="text-emerald-400" size={24} />
+                <div className="p-2.5 bg-forest-900/40 rounded-lg group-hover:bg-forest-900/60 transition-colors">
+                  <Mail className="text-forest-400" size={20} />
                 </div>
                 <div>
-                  <h3 className="text-sm font-medium text-slate-400">Email</h3>
-                  <p className="text-lg font-semibold text-slate-100">obedysjunio@email.com</p>
+                  <h3 className="text-xs font-medium text-steel-500 uppercase tracking-wider">Email</h3>
+                  <p className="text-base font-medium text-steel-100">obedysjunio@email.com</p>
                 </div>
               </a>
 
-              <a 
-                href="tel:+5547999226394" 
-                className="flex items-center gap-4 p-4 bg-slate-800/50 rounded-xl border border-slate-700 hover:border-emerald-500/50 hover:bg-slate-800 transition-all group"
+              <a
+                href="tel:+5547999226394"
+                className="flex items-center gap-4 p-4 card-corporate group"
               >
-                <div className="p-3 bg-emerald-500/10 rounded-lg group-hover:bg-emerald-500/20 transition-colors">
-                  <Phone className="text-emerald-400" size={24} />
+                <div className="p-2.5 bg-forest-900/40 rounded-lg group-hover:bg-forest-900/60 transition-colors">
+                  <Phone className="text-forest-400" size={20} />
                 </div>
                 <div>
-                  <h3 className="text-sm font-medium text-slate-400">Telefone / WhatsApp</h3>
-                  <p className="text-lg font-semibold text-slate-100">+55 (47) 9 9922-6394</p>
+                  <h3 className="text-xs font-medium text-steel-500 uppercase tracking-wider">Telefone / WhatsApp</h3>
+                  <p className="text-base font-medium text-steel-100">+55 (47) 9 9922-6394</p>
                 </div>
               </a>
 
-              <div className="flex items-center gap-4 p-4 bg-slate-800/50 rounded-xl border border-slate-700">
-                <div className="p-3 bg-emerald-500/10 rounded-lg">
-                  <MapPin className="text-emerald-400" size={24} />
+              <div className="flex items-center gap-4 p-4 card-corporate">
+                <div className="p-2.5 bg-steel-800/60 rounded-lg">
+                  <MapPin className="text-steel-400" size={20} />
                 </div>
                 <div>
-                  <h3 className="text-sm font-medium text-slate-400">Localização</h3>
-                  <p className="text-lg font-semibold text-slate-100">Joinville, SC - Brasil</p>
+                  <h3 className="text-xs font-medium text-steel-500 uppercase tracking-wider">Localização</h3>
+                  <p className="text-base font-medium text-steel-100">Joinville, SC - Brasil</p>
                 </div>
               </div>
             </div>
 
-            <div className="mt-12 flex gap-4">
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
+            <div className="mt-8 flex gap-3">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 py-3 bg-[#0077b5] hover:bg-[#006396] text-white rounded-lg font-medium flex items-center justify-center gap-2 transition-colors shadow-lg shadow-blue-900/20"
+                className="flex-1 py-3 bg-petrol-700 hover:bg-petrol-600 text-white rounded font-medium flex items-center justify-center gap-2 transition-colors"
               >
-                <Linkedin size={20} /> LinkedIn
+                <Linkedin size={18} /> LinkedIn
               </a>
-              <a 
-                href="https://github.com/ObedysGois" 
-                target="_blank" 
+              <a
+                href="https://github.com/ObedysGois"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 py-3 bg-slate-700 hover:bg-slate-600 text-white rounded-lg font-medium flex items-center justify-center gap-2 transition-colors shadow-lg shadow-slate-900/20"
+                className="flex-1 py-3 bg-steel-700 hover:bg-steel-600 text-white rounded font-medium flex items-center justify-center gap-2 transition-colors"
               >
-                <Github size={20} /> GitHub
+                <Github size={18} /> GitHub
               </a>
             </div>
           </div>
 
-          {/* Contact Form (Visual Only for now, or functional if backend exists, but keeping simple for frontend) */}
-          <div className="bg-slate-800 rounded-2xl p-8 border border-slate-700 shadow-xl">
-            <h3 className="text-xl font-bold text-slate-100 mb-6">Envie uma mensagem</h3>
-            
+          {/* Contact Form */}
+          <div className="card-corporate p-6 md:p-8">
+            <h3 className="text-lg font-semibold text-steel-100 mb-6">Envie uma mensagem</h3>
+
             <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
               <div>
-                <label className="block text-sm font-medium text-slate-400 mb-1">Nome</label>
-                <input 
-                  type="text" 
-                  className="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors"
+                <label className="block text-xs font-medium text-steel-400 uppercase tracking-wider mb-1.5">Nome</label>
+                <input
+                  type="text"
+                  className="w-full bg-graphite-950 border border-steel-700 rounded px-4 py-3 text-steel-100 focus:outline-none focus:border-forest-500 transition-colors text-sm"
                   placeholder="Seu nome"
                 />
               </div>
-              
+
               <div>
-                <label className="block text-sm font-medium text-slate-400 mb-1">Email</label>
-                <input 
-                  type="email" 
-                  className="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors"
+                <label className="block text-xs font-medium text-steel-400 uppercase tracking-wider mb-1.5">Email</label>
+                <input
+                  type="email"
+                  className="w-full bg-graphite-950 border border-steel-700 rounded px-4 py-3 text-steel-100 focus:outline-none focus:border-forest-500 transition-colors text-sm"
                   placeholder="seu@email.com"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-slate-400 mb-1">Assunto</label>
-                <select className="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors">
+                <label className="block text-xs font-medium text-steel-400 uppercase tracking-wider mb-1.5">Assunto</label>
+                <select className="w-full bg-graphite-950 border border-steel-700 rounded px-4 py-3 text-steel-100 focus:outline-none focus:border-forest-500 transition-colors text-sm">
                   <option>Oportunidade de Trabalho</option>
                   <option>Consultoria / Projeto</option>
                   <option>Networking</option>
@@ -118,25 +112,25 @@ const Contact = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-slate-400 mb-1">Mensagem</label>
-                <textarea 
-                  className="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors h-32 resize-none"
+                <label className="block text-xs font-medium text-steel-400 uppercase tracking-wider mb-1.5">Mensagem</label>
+                <textarea
+                  className="w-full bg-graphite-950 border border-steel-700 rounded px-4 py-3 text-steel-100 focus:outline-none focus:border-forest-500 transition-colors h-28 resize-none text-sm"
                   placeholder="Olá, gostaria de conversar sobre..."
                 ></textarea>
               </div>
 
-              <button 
+              <button
                 type="submit"
-                className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-3 rounded-lg transition-all shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2 mt-2"
+                className="w-full bg-forest-600 hover:bg-forest-700 text-white font-medium py-3 rounded transition-all flex items-center justify-center gap-2 mt-2"
               >
-                <Send size={18} /> Enviar Mensagem
+                <Send size={16} /> Enviar Mensagem
               </button>
             </form>
           </div>
 
         </div>
 
-        <div className="mt-24 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+        <div className="mt-20 pt-8 border-t border-steel-800 text-center text-steel-500 text-sm">
           <p>© {new Date().getFullYear()} Obedys Júnio. Todos os direitos reservados.</p>
         </div>
       </div>

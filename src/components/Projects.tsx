@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { ExternalLink, Github, X, ChevronLeft, ChevronRight, BarChart4, AppWindow, Database, Eye } from 'lucide-react';
+import React, { useState } from 'react';
+import { ExternalLink, Github, X, ChevronLeft, ChevronRight, BarChart4, AppWindow, Eye } from 'lucide-react';
 import dashboardev from '../../assets/dashboardev.jpg';
 import dashboardDevolucoes1 from '../../assets/1DASHBOARD_DEVOLUCOES_MODELO_1.png';
 import dashboardDevolucoes2 from '../../assets/2DASHBOARD_DEVOLUCOES_MODELO_1.png';
@@ -254,79 +254,73 @@ const Projects = () => {
   };
 
   return (
-    <div className="py-24 bg-slate-800/50">
+    <div className="py-24 bg-graphite-900/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-50">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-steel-50 font-heading">
             Projetos & Cases
           </h2>
-          <div className="w-20 h-1.5 bg-emerald-500 rounded-full mb-8"></div>
-          <p className="text-lg text-slate-400 max-w-3xl">
-            Soluções desenvolvidas para resolver problemas reais de negócio. 
+          <div className="section-divider mb-8"></div>
+          <p className="text-lg text-steel-400 max-w-3xl">
+            Soluções desenvolvidas para resolver problemas reais de negócio.
             Foco em automação, visibilidade de dados e eficiência operacional.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
-            <div 
+            <div
               key={project.id}
-              className="group bg-slate-900 rounded-xl overflow-hidden border border-slate-700 hover:border-emerald-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10 flex flex-col"
+              className="group card-corporate overflow-hidden flex flex-col"
             >
               {/* Image Container */}
-              <div className="relative h-48 overflow-hidden cursor-pointer" onClick={() => openModal(project)}>
-                <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-all z-10"></div>
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              <div className="relative h-44 overflow-hidden cursor-pointer" onClick={() => openModal(project)}>
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute top-4 right-4 z-20">
-                  <span className="px-3 py-1 bg-slate-900/90 backdrop-blur-sm text-emerald-400 text-xs font-medium rounded-full border border-emerald-500/20">
+                <div className="absolute top-3 right-3">
+                  <span className="px-2.5 py-1 bg-graphite-950/90 text-forest-400 text-xs font-medium rounded border border-steel-700/50">
                     {project.category}
                   </span>
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-xl font-bold text-slate-100 mb-2 group-hover:text-emerald-400 transition-colors">
+              <div className="p-5 flex-1 flex flex-col">
+                <h3 className="text-lg font-semibold text-steel-100 mb-2 group-hover:text-forest-400 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-slate-400 text-sm mb-4 line-clamp-2">
+                <p className="text-steel-400 text-sm mb-4 line-clamp-2">
                   {project.description}
                 </p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-1.5 mb-5">
                   {project.technologies.slice(0, 3).map((tech) => (
-                    <span key={tech} className="text-xs text-slate-500 bg-slate-800 px-2 py-1 rounded">
+                    <span key={tech} className="text-xs text-steel-500 bg-steel-800/50 px-2 py-0.5 rounded">
                       {tech}
                     </span>
                   ))}
-                  {project.technologies.length > 3 && (
-                    <span className="text-xs text-slate-500 bg-slate-800 px-2 py-1 rounded">
-                      +{project.technologies.length - 3}
-                    </span>
-                  )}
                 </div>
 
                 {/* Footer */}
-                <div className="mt-auto pt-4 border-t border-slate-800 flex justify-between items-center">
-                  <button 
+                <div className="mt-auto pt-4 border-t border-steel-700/50 flex justify-between items-center">
+                  <button
                     onClick={() => openModal(project)}
-                    className="text-sm text-emerald-400 hover:text-emerald-300 font-medium flex items-center gap-1"
+                    className="text-sm text-forest-400 hover:text-forest-300 font-medium flex items-center gap-1.5"
                   >
-                    <Eye size={16} /> Ver Detalhes
+                    <Eye size={15} /> Ver Detalhes
                   </button>
                   {project.codeUrl && project.codeUrl !== "#" && (
-                    <a 
+                    <a
                       href={project.codeUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-slate-500 hover:text-slate-300 transition-colors"
+                      className="text-steel-500 hover:text-steel-300 transition-colors"
                     >
-                      <Github size={18} />
+                      <Github size={17} />
                     </a>
                   )}
                 </div>
@@ -338,51 +332,50 @@ const Projects = () => {
 
       {/* Modal */}
       {selectedProject && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/95 backdrop-blur-sm">
-          <div className="bg-slate-800 rounded-2xl w-full max-w-6xl max-h-[90vh] overflow-y-auto border border-slate-700 shadow-2xl relative flex flex-col md:flex-row">
-            
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-graphite-950/95">
+          <div className="bg-graphite-900 rounded-xl w-full max-w-5xl max-h-[90vh] overflow-y-auto border border-steel-700 relative flex flex-col md:flex-row">
+
             {/* Close Button */}
-            <button 
+            <button
               onClick={closeModal}
-              className="absolute top-4 right-4 z-50 p-2 bg-slate-900/50 hover:bg-slate-700 rounded-full text-slate-300 hover:text-white transition-colors"
+              className="absolute top-3 right-3 z-50 p-2 bg-graphite-950/80 hover:bg-steel-800 rounded text-steel-400 hover:text-white transition-colors"
             >
-              <X size={24} />
+              <X size={20} />
             </button>
 
             {/* Left: Image Gallery */}
-            <div className="w-full md:w-2/3 bg-slate-900 relative group min-h-[300px] md:min-h-[600px] flex items-center justify-center">
+            <div className="w-full md:w-2/3 bg-graphite-950 relative group min-h-[280px] md:min-h-[500px] flex items-center justify-center">
               {selectedProject.images && selectedProject.images.length > 0 ? (
                 <>
-                  <img 
-                    src={selectedProject.images[currentImageIndex]} 
-                    alt={selectedProject.title} 
+                  <img
+                    src={selectedProject.images[currentImageIndex]}
+                    alt={selectedProject.title}
                     className="max-w-full max-h-full object-contain"
                   />
-                  
+
                   {selectedProject.images.length > 1 && (
                     <>
-                      <button 
+                      <button
                         onClick={prevImage}
-                        className="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-slate-900/50 hover:bg-slate-700 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+                        className="absolute left-3 top-1/2 -translate-y-1/2 p-2 bg-graphite-950/70 hover:bg-steel-800 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity"
                       >
-                        <ChevronLeft size={24} />
+                        <ChevronLeft size={22} />
                       </button>
-                      <button 
+                      <button
                         onClick={nextImage}
-                        className="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-slate-900/50 hover:bg-slate-700 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+                        className="absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-graphite-950/70 hover:bg-steel-800 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity"
                       >
-                        <ChevronRight size={24} />
+                        <ChevronRight size={22} />
                       </button>
-                      
+
                       {/* Dots */}
-                      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5">
                         {selectedProject.images.map((_: any, idx: number) => (
                           <button
                             key={idx}
                             onClick={() => setCurrentImageIndex(idx)}
-                            className={`w-2 h-2 rounded-full transition-all ${
-                              currentImageIndex === idx ? 'bg-emerald-500 w-6' : 'bg-slate-600 hover:bg-slate-500'
-                            }`}
+                            className={`w-2 h-2 rounded-full transition-all ${currentImageIndex === idx ? 'bg-forest-500 w-5' : 'bg-steel-600 hover:bg-steel-500'
+                              }`}
                           />
                         ))}
                       </div>
@@ -390,47 +383,47 @@ const Projects = () => {
                   )}
                 </>
               ) : (
-                <div className="text-slate-500">Sem imagens disponíveis</div>
+                <div className="text-steel-500">Sem imagens disponíveis</div>
               )}
             </div>
 
             {/* Right: Details */}
-            <div className="w-full md:w-1/3 p-8 flex flex-col">
-              <div className="mb-6">
-                <span className="text-emerald-400 text-sm font-medium bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
+            <div className="w-full md:w-1/3 p-6 flex flex-col">
+              <div className="mb-4">
+                <span className="text-forest-400 text-xs font-medium bg-forest-900/30 px-2.5 py-1 rounded border border-forest-700/30">
                   {selectedProject.category}
                 </span>
               </div>
-              
-              <h2 className="text-3xl font-bold text-slate-100 mb-4">{selectedProject.title}</h2>
-              
-              <div className="space-y-6 flex-1 overflow-y-auto pr-2 custom-scrollbar">
+
+              <h2 className="text-2xl font-semibold text-steel-100 mb-4">{selectedProject.title}</h2>
+
+              <div className="space-y-5 flex-1 overflow-y-auto pr-1">
                 <div>
-                  <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-2">Sobre o Projeto</h3>
-                  <p className="text-slate-300 leading-relaxed">
+                  <h3 className="text-xs font-semibold text-steel-500 uppercase tracking-wider mb-2">Sobre o Projeto</h3>
+                  <p className="text-steel-300 text-sm leading-relaxed">
                     {selectedProject.fullDescription || selectedProject.description}
                   </p>
                 </div>
 
                 {selectedProject.problem && (
-                  <div className="bg-red-500/10 p-4 rounded-lg border border-red-500/20">
-                    <h3 className="text-sm font-semibold text-red-400 uppercase tracking-wider mb-1">Problema</h3>
-                    <p className="text-slate-300 text-sm">{selectedProject.problem}</p>
+                  <div className="bg-steel-800/30 p-3 rounded border-l-2 border-petrol-500">
+                    <h3 className="text-xs font-semibold text-petrol-400 uppercase tracking-wider mb-1">Problema</h3>
+                    <p className="text-steel-300 text-sm">{selectedProject.problem}</p>
                   </div>
                 )}
 
                 {selectedProject.solution && (
-                  <div className="bg-emerald-500/10 p-4 rounded-lg border border-emerald-500/20">
-                    <h3 className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-1">Solução</h3>
-                    <p className="text-slate-300 text-sm">{selectedProject.solution}</p>
+                  <div className="bg-steel-800/30 p-3 rounded border-l-2 border-forest-500">
+                    <h3 className="text-xs font-semibold text-forest-400 uppercase tracking-wider mb-1">Solução</h3>
+                    <p className="text-steel-300 text-sm">{selectedProject.solution}</p>
                   </div>
                 )}
 
                 <div>
-                  <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">Tecnologias</h3>
+                  <h3 className="text-xs font-semibold text-steel-500 uppercase tracking-wider mb-2">Tecnologias</h3>
                   <div className="flex flex-wrap gap-2">
                     {selectedProject.technologies.map((tech: string) => (
-                      <span key={tech} className="text-sm text-slate-300 bg-slate-800 px-3 py-1.5 rounded-md border border-slate-700">
+                      <span key={tech} className="text-xs text-steel-300 bg-steel-800/50 px-2.5 py-1 rounded border border-steel-700/50">
                         {tech}
                       </span>
                     ))}
@@ -438,26 +431,26 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div className="mt-8 pt-6 border-t border-slate-700 flex flex-col gap-3">
+              <div className="mt-6 pt-4 border-t border-steel-700/50 flex flex-col gap-2">
                 {selectedProject.demoUrl && selectedProject.demoUrl !== "#" && (
-                  <a 
+                  <a
                     href={selectedProject.demoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-3 bg-emerald-500 hover:bg-emerald-600 text-white rounded-lg font-medium flex items-center justify-center gap-2 transition-colors"
+                    className="w-full py-2.5 bg-forest-600 hover:bg-forest-700 text-white rounded font-medium flex items-center justify-center gap-2 transition-colors text-sm"
                   >
-                    <ExternalLink size={18} />
-                    Ver Projeto Online / Documentação
+                    <ExternalLink size={16} />
+                    Ver Projeto / Documentação
                   </a>
                 )}
                 {selectedProject.codeUrl && selectedProject.codeUrl !== "#" && (
-                  <a 
+                  <a
                     href={selectedProject.codeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full py-3 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors border border-slate-600"
+                    className="w-full py-2.5 bg-steel-700 hover:bg-steel-600 text-steel-200 rounded font-medium flex items-center justify-center gap-2 transition-colors border border-steel-600 text-sm"
                   >
-                    <Github size={18} />
+                    <Github size={16} />
                     Ver Código Fonte
                   </a>
                 )}

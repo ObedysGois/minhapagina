@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Award, BookOpen, Calendar, CheckCircle2 } from 'lucide-react';
+import { GraduationCap, Award, BookOpen, Calendar } from 'lucide-react';
 
 const Studies = () => {
   const education = [
@@ -65,33 +65,33 @@ const Studies = () => {
   ];
 
   return (
-    <div className="py-24 bg-slate-800/50">
+    <div className="py-24 bg-graphite-900/50 bg-flow-lines">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          
+
           {/* Formal Education */}
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <div className="p-3 bg-emerald-500/10 rounded-xl">
-                <GraduationCap className="text-emerald-400" size={32} />
+              <div className="p-2.5 bg-forest-900/40 rounded-lg">
+                <GraduationCap className="text-forest-400" size={26} />
               </div>
-              <h2 className="text-3xl font-bold text-slate-50">Formação Acadêmica</h2>
+              <h2 className="text-2xl font-semibold text-steel-50 font-heading">Formação Acadêmica</h2>
             </div>
 
             <div className="space-y-8">
               {education.map((item) => (
-                <div key={item.id} className="relative pl-8 border-l-2 border-slate-700">
-                  <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-800 border-2 border-emerald-500"></div>
-                  
-                  <div className="mb-1 text-emerald-400 font-medium text-sm flex items-center gap-2">
+                <div key={item.id} className="relative pl-6 border-l border-steel-700">
+                  <div className="absolute -left-[5px] top-0 w-2.5 h-2.5 rounded-full bg-graphite-900 border-2 border-forest-500"></div>
+
+                  <div className="mb-1 text-forest-400 font-medium text-sm flex items-center gap-2">
                     <Calendar size={14} />
                     {item.period}
                   </div>
-                  
-                  <h3 className="text-xl font-bold text-slate-100 mb-1">{item.degree}</h3>
-                  <p className="text-slate-400 font-medium mb-3">{item.institution}</p>
-                  <p className="text-slate-400 text-sm leading-relaxed">
+
+                  <h3 className="text-lg font-semibold text-steel-100 mb-1">{item.degree}</h3>
+                  <p className="text-steel-400 font-medium mb-2 text-sm">{item.institution}</p>
+                  <p className="text-steel-400 text-sm leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -102,25 +102,25 @@ const Studies = () => {
           {/* Certifications */}
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <div className="p-3 bg-blue-500/10 rounded-xl">
-                <Award className="text-blue-400" size={32} />
+              <div className="p-2.5 bg-petrol-900/40 rounded-lg">
+                <Award className="text-petrol-400" size={26} />
               </div>
-              <h2 className="text-3xl font-bold text-slate-50">Certificações</h2>
+              <h2 className="text-2xl font-semibold text-steel-50 font-heading">Certificações</h2>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {certifications.map((cert) => (
-                <div key={cert.id} className="bg-slate-900 p-4 rounded-xl border border-slate-700 hover:border-blue-500/30 transition-all group">
+                <div key={cert.id} className="card-corporate p-4 group">
                   <div className="flex justify-between items-start mb-2">
-                    <BookOpen className="text-slate-500 group-hover:text-blue-400 transition-colors" size={20} />
-                    <span className="text-xs text-slate-500 bg-slate-800 px-2 py-1 rounded">{cert.year}</span>
+                    <BookOpen className="text-steel-600 group-hover:text-petrol-400 transition-colors" size={18} />
+                    <span className="text-xs text-steel-500 bg-steel-800/50 px-2 py-0.5 rounded">{cert.year}</span>
                   </div>
-                  <h4 className="text-slate-200 font-semibold mb-1 line-clamp-2 min-h-[3rem]">
+                  <h4 className="text-steel-200 font-medium text-sm mb-1 line-clamp-2 min-h-[2.5rem]">
                     {cert.title}
                   </h4>
-                  <div className="flex justify-between items-center text-sm text-slate-400">
+                  <div className="flex justify-between items-center text-xs text-steel-400">
                     <span>{cert.issuer}</span>
-                    <span className="text-xs opacity-60">{cert.hours}</span>
+                    <span className="opacity-60">{cert.hours}</span>
                   </div>
                 </div>
               ))}
