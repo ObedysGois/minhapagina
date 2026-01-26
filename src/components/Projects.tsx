@@ -72,6 +72,21 @@ import gestaoEntregas14 from '../../assets/e15.png';
 import gestaoEntregas15 from '../../assets/e16.png';
 import gestaoEntregas16 from '../../assets/e17.png';
 import gestaoEntregas17 from '../../assets/e18.png';
+import checkpesoThumb from '../../assets/checkpeso2.png';
+import checkpeso1 from '../../assets/checkpeso1.png';
+import checkpeso3 from '../../assets/checkpeso3.png';
+import checkpeso4 from '../../assets/checkpeso4.png';
+import checkpeso5 from '../../assets/checkpeso5.png';
+import checkpeso6 from '../../assets/checkpeso6.png';
+import checkpeso7 from '../../assets/checkpeso7.png';
+import checkpeso8 from '../../assets/checkpeso8.png';
+import checkpeso9 from '../../assets/checkpeso9.png';
+import checkpeso10 from '../../assets/checkpeso10.png';
+import checkpeso11 from '../../assets/checkpeso11.png';
+import checkpeso12 from '../../assets/checkpeso12.png';
+import checkpeso13 from '../../assets/checkpeso13.png';
+import checkpeso14 from '../../assets/checkpeso14.png';
+import checkpeso15 from '../../assets/checkpeso15.png';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
@@ -80,11 +95,11 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Dashboard de Indicadores KPI's",
-      description: "Solução de Business Intelligence para monitoramento logístico.",
-      fullDescription: "Dashboard completo desenvolvido em Power BI para centralizar a visualização de dados logísticos. Permite acompanhamento em tempo real de métricas críticas como tempo de entrega, custo por km e eficiência operacional.",
-      problem: "Falta de visibilidade centralizada dos indicadores logísticos dispersos em planilhas.",
-      solution: "Implementação de dashboard automatizado com conexão direta ao banco de dados.",
+      title: "Dashboard de Indicadores Logísticos (KPI’s)",
+      description: "Solução de Business Intelligence para monitoramento e análise de performance logística.",
+      fullDescription: "Dashboard corporativo desenvolvido em Power BI para centralizar e padronizar a visualização de indicadores logísticos. A solução permite o acompanhamento contínuo de métricas críticas de desempenho operacional, apoiando a análise de eficiência, produtividade e nível de serviço por período, operação e unidade.",
+      problem: "Indicadores logísticos descentralizados em planilhas, dificultando análise, comparação e tomada de decisão.",
+      solution: "Centralização dos dados em dashboard interativo com atualização automática e visão consolidada de performance.",
       image: dashboardev,
       images: [dashboardDevolucoes1, dashboardDevolucoes2, dashboardDevolucoes3, dashboardDevolucoes4, dashboardDevolucoes5],
       technologies: ["Power BI", "DAX", "SQL Server"],
@@ -95,11 +110,11 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Sistema de Gestão de Fretes",
-      description: "Aplicação web para controle de custos e auditoria de fretes.",
-      fullDescription: "Sistema robusto para gestão completa do ciclo de vida dos fretes, desde a contratação até o pagamento e auditoria. Inclui módulos de cadastro de transportadoras, tabelas de preço e conciliação de faturas.",
-      problem: "Dificuldade no controle de custos de frete e divergências em faturas.",
-      solution: "Sistema web com validação automática de valores e fluxo de aprovação.",
+      title: "Sistema Web de Gestão e Auditoria de Fretes",
+      description: "Sistema corporativo para controle, validação e auditoria de processos de frete.",
+      fullDescription: "Sistema Web desenvolvido para gestão estruturada do ciclo de fretes, contemplando cadastros, parametrizações e validações automáticas. Permite auditoria de valores, controle de tabelas de preços e acompanhamento do processo de forma padronizada e rastreável.",
+      problem: "Processo manual e suscetível a erros no controle e validação de fretes.",
+      solution: "Digitalização do processo com regras automáticas de validação e fluxo controlado de conferência.",
       image: gestaoFretesThumb,
       images: [gestaoFretesThumb, gestaoFretes1, gestaoFretes2, gestaoFretes4],
       technologies: ["JavaScript", "HTML/CSS", "Processos Logísticos"],
@@ -110,11 +125,11 @@ const Projects = () => {
     },
     {
       id: 11,
-      title: "Dashboard - DDE dos Produtos",
-      description: "Análise estratégica de Dias de Estoque para otimização de compras.",
-      fullDescription: "Ferramenta analítica para gestão de estoque baseada no giro de produtos (DDE). Auxilia o time de compras e logística a manter níveis ideais de inventário, evitando rupturas e excessos.",
-      problem: "Falta de clareza sobre a cobertura de estoque e risco de ruptura.",
-      solution: "Dashboard interativo com cálculo automático de DDE por SKU e Categoria.",
+      title: "Dashboard de Dias de Estoque (DDE)",
+      description: "Ferramenta analítica para gestão de estoque baseada em giro e cobertura.",
+      fullDescription: "Dashboard analítico desenvolvido para monitorar Dias de Estoque (DDE), permitindo avaliação contínua do giro e da cobertura dos produtos. Apoia as áreas de compras e logística na tomada de decisão, reduzindo riscos de ruptura e excesso de inventário.",
+      problem: "Baixa visibilidade sobre cobertura de estoque e comportamento do giro dos produtos.",
+      solution: "Dashboard interativo com cálculo automático de DDE por SKU, categoria e período.",
       image: dashboardDDEThumb,
       images: [dashboardDDEThumb, dashboardDDE1, dashboardDDE2, dashboardDDE3],
       technologies: ["Power BI", "DAX", "Análise de Estoque"],
@@ -125,11 +140,11 @@ const Projects = () => {
     },
     {
       id: 15,
-      title: "App Gestão de Entregas",
-      description: "Plataforma completa para gestão de last mile e monitoramento em tempo real.",
-      fullDescription: "Aplicativo multi-perfil (Admin, Motorista, Cliente) para gestão de entregas em tempo real. Inclui roteirização, comprovante digital de entrega e rastreamento.",
-      problem: "Falta de informação em tempo real sobre o status das entregas.",
-      solution: "App mobile para motoristas e painel web para gestão da frota.",
+      title: "Sistema de Gestão de Entregas e Last Mile",
+      description: "Plataforma integrada para monitoramento e controle de entregas em tempo real.",
+      fullDescription: "Sistema completo para gestão de entregas, composto por aplicativo mobile e painel web. Permite acompanhamento em tempo real, controle de status, registro de ocorrências e comprovação digital de entrega, atendendo diferentes perfis de usuário (administração, operação e cliente).",
+      problem: "Baixa visibilidade operacional e dificuldade no acompanhamento do status das entregas.",
+      solution: "Plataforma integrada com informações em tempo real e rastreabilidade do processo de entrega.",
       image: gestaoEntregasThumb,
       images: [gestaoEntregasThumb, gestaoEntregas1, gestaoEntregas2, gestaoEntregas3, gestaoEntregas4, gestaoEntregas5, gestaoEntregas6, gestaoEntregas7, gestaoEntregas8, gestaoEntregas9, gestaoEntregas10, gestaoEntregas11, gestaoEntregas12, gestaoEntregas13, gestaoEntregas14, gestaoEntregas15, gestaoEntregas16, gestaoEntregas17],
       technologies: ["React", "Node.js", "Supabase", "Mobile First"],
@@ -139,11 +154,11 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Controle de Logística Reversa",
-      description: "Sistema para gestão de devoluções e trocas.",
-      fullDescription: "Sistema especializado no fluxo de logística reversa, permitindo controle rigoroso de devoluções, motivos de recusa e reentrada no estoque.",
-      problem: "Processo de devolução manual e desorganizado, gerando perdas.",
-      solution: "Digitalização do fluxo de reversa com validação e rastreabilidade.",
+      title: "Sistema de Gestão de Logística Reversa",
+      description: "Sistema corporativo para controle e rastreabilidade de devoluções.",
+      fullDescription: "Sistema desenvolvido para estruturar o fluxo de logística reversa, permitindo controle detalhado das devoluções, motivos, volumes e reentrada em estoque. Garante rastreabilidade e padronização do processo, reduzindo perdas e retrabalho.",
+      problem: "Fluxo de devoluções descentralizado e sem controle padronizado.",
+      solution: "Digitalização e rastreamento completo do processo de logística reversa.",
       image: logisticaReversaThumb,
       images: [logisticaReversaThumb, logisticaReversa1, logisticaReversa2, logisticaReversa3, logisticaReversa4, logisticaReversa5, logisticaReversa6],
       technologies: ["JavaScript", "HTML/CSS", "Processos Logísticos"],
@@ -154,11 +169,11 @@ const Projects = () => {
     },
     {
       id: 10,
-      title: "Automação de NF-e (PDF)",
-      description: "Ferramenta para processamento em lote de Notas Fiscais.",
-      fullDescription: "Utilitário web para separação e renomeação automática de arquivos PDF de Notas Fiscais, otimizando o tempo do time administrativo.",
-      problem: "Tempo excessivo gasto renomeando e separando arquivos PDF manualmente.",
-      solution: "Automação que lê o conteúdo do PDF e organiza os arquivos.",
+      title: "Automação de Processamento de NF-e (PDF)",
+      description: "Ferramenta de automação para organização e tratamento de documentos fiscais.",
+      fullDescription: "Utilitário Web desenvolvido para leitura, separação e renomeação automática de arquivos PDF de Notas Fiscais. Reduz significativamente o tempo operacional do time administrativo e elimina erros manuais no tratamento de documentos.",
+      problem: "Processo manual e repetitivo no tratamento de arquivos fiscais.",
+      solution: "Automação do processamento de PDFs com padronização e ganho de produtividade.",
       image: renThumb,
       images: [renThumb],
       technologies: ["React", "PDF.js", "Automação"],
@@ -170,11 +185,11 @@ const Projects = () => {
     },
     {
       id: 7,
-      title: "Dashboard de Perdas",
-      description: "Monitoramento de avarias e quebras operacionais.",
-      fullDescription: "Painel de controle focado na identificação e redução de perdas operacionais, permitindo análise por motivo, setor e produto.",
-      problem: "Dificuldade em identificar a causa raiz das perdas de estoque.",
-      solution: "Visualização clara dos focos de perda para ação corretiva imediata.",
+      title: "Dashboard de Perdas Operacionais",
+      description: "Painel analítico para monitoramento e redução de perdas logísticas.",
+      fullDescription: "Dashboard focado na análise de perdas operacionais, permitindo identificação de padrões, causas recorrentes e impactos por produto, setor e período. Suporta ações corretivas e melhoria contínua dos processos.",
+      problem: "Dificuldade em identificar causas e recorrência das perdas operacionais.",
+      solution: "Visualização analítica clara para direcionamento de ações corretivas.",
       image: dashboardPerdasThumb,
       images: [dashboardPerdasThumb, dashboardPerdas1],
       technologies: ["Power BI", "Análise de Dados"],
@@ -185,11 +200,11 @@ const Projects = () => {
     },
     {
       id: 12,
-      title: "Controle de Expedição",
-      description: "Sistema para conferência e despacho de cargas.",
-      fullDescription: "Ferramenta para garantir a acuracidade na expedição, validando pedidos contra cargas e gerando romaneios automáticos.",
-      problem: "Erros de expedição e divergências de inventário.",
-      solution: "Conferência sistêmica antes do carregamento.",
+      title: "Sistema de Controle de Expedição",
+      description: "Sistema para conferência e validação do processo de despacho.",
+      fullDescription: "Sistema desenvolvido para garantir acuracidade na expedição de cargas, realizando conferência sistêmica entre pedidos, volumes e carregamentos. Gera registros e romaneios de forma automatizada.",
+      problem: "Erros de expedição e divergências entre pedido e carga.",
+      solution: "Conferência estruturada e validação antes do carregamento.",
       image: expedicaoThumb,
       images: [expedicaoThumb, expedicao1, expedicao2, expedicao3, expedicao4],
       technologies: ["JavaScript", "Logística"],
@@ -200,11 +215,11 @@ const Projects = () => {
     },
     {
       id: 13,
-      title: "Gestão de Canhotos",
-      description: "Digitalização e controle de comprovantes de entrega.",
-      fullDescription: "Sistema para digitalização e indexação de canhotos de nota fiscal, facilitando a busca e comprovação de entregas.",
-      problem: "Perda de comprovantes físicos e demora na localização.",
-      solution: "Arquivo digital indexado e pesquisável.",
+      title: "Sistema de Gestão de Canhotos",
+      description: "Plataforma para digitalização e controle de comprovantes de entrega.",
+      fullDescription: "Sistema voltado à digitalização, indexação e organização de canhotos de notas fiscais. Facilita a busca, comprovação de entregas e rastreabilidade documental.",
+      problem: "Perda de documentos físicos e dificuldade de localização.",
+      solution: "Arquivo digital centralizado, indexado e pesquisável.",
       image: canhotosThumb,
       images: [canhotosThumb, canhotos1, canhotos2, canhotos3, canhotos4, canhotos5, canhotos6, canhotos7, canhotos8],
       technologies: ["JavaScript", "Gestão Documental"],
@@ -215,17 +230,58 @@ const Projects = () => {
     },
     {
       id: 14,
-      title: "Dashboard Despesas de Fretes",
-      description: "Análise financeira de custos logísticos.",
-      fullDescription: "Dashboard financeiro focado em despesas de transporte, permitindo análise de custo por kg, % da receita e comparativos entre transportadoras.",
-      problem: "Falta de controle sobre o impacto do frete na margem.",
-      solution: "Visão detalhada do custo de servir logístico.",
+      title: "Dashboard de Despesas Logísticas",
+      description: "Painel analítico para monitoramento e controle de despesas de transporte.",
+      fullDescription: "Dashboard financeiro desenvolvido para análise de despesas logísticas, permitindo comparativos por transportadora, período e indicadores de custo. Suporta gestão financeira e avaliação de eficiência do transporte.",
+      problem: "Baixa visibilidade sobre despesas logísticas e seus direcionadores.",
+      solution: "Análise estruturada com indicadores financeiros e comparativos.",
       image: despesasFretesThumb,
       images: [despesasFretesThumb, despesasFretes1, despesasFretes2, despesasFretes3],
       technologies: ["Power BI", "Finanças"],
       category: "Business Intelligence",
       icon: BarChart4,
       demoUrl: bifrete,
+      featured: true
+    },
+    {
+      id: 15,
+      title: "Sistema de Recebimento e Controle de Pesagens (CHECKPESO)",
+      description: "Sistema Web corporativo para controle de recebimentos por pesagem e amostragem, com base na norma ABNT NBR 5429 – Nível S2.",
+      fullDescription: `
+        Sistema Web desenvolvido para gestão e controle de recebimentos logísticos por meio de pesagens e planos de amostragem, conforme a norma ABNT NBR 5429 (nível S2).
+
+        A plataforma permite o registro estruturado das pesagens realizadas no recebimento de mercadorias, possibilitando a identificação de divergências, perdas e não conformidades de forma padronizada e rastreável.
+
+        Os dados coletados são consolidados e analisados por produto, fornecedor, filial e período, oferecendo uma visão analítica detalhada do desempenho operacional e da recorrência de desvios no processo de recebimento.
+
+        O sistema conta com dashboards interativos em tempo real, indicadores de perdas e conformidade, além da geração automática de relatórios em PDF, HTML e Excel. Também possui envio automatizado de relatórios e alertas via e-mail e WhatsApp, apoiando a tomada de decisão operacional e gerencial.
+
+        Inclui módulos de cadastro e parametrização de produtos, fornecedores, filiais e critérios de amostragem, garantindo padronização do processo, histórico de registros e suporte contínuo à melhoria operacional.
+        `,
+      problem: "Falta de controle estruturado e rastreável sobre perdas, divergências de peso e não conformidades no processo de recebimento.",
+      solution: "Padronização do controle de pesagens e amostragem, com análise detalhada de perdas e desempenho por produto, fornecedor e filial, suportada por dashboards e relatórios automatizados.",
+      image: checkpesoThumb,
+      images: [
+        checkpesoThumb,
+        checkpeso1,
+        checkpeso3,
+        checkpeso4,
+        checkpeso5,
+        checkpeso6,
+        checkpeso7,
+        checkpeso8,
+        checkpeso9,
+        checkpeso10,
+        checkpeso11,
+        checkpeso12,
+        checkpeso13,
+        checkpeso14,
+        checkpeso15
+      ],
+      technologies: ["Next.js", "TypeScript", "React", "HTML", "CSS", "SHADCN"],
+      category: "Sistema Web Corporativo",
+      icon: BarChart4,
+      demoUrl: "https://apppesagem.vercel.app/",
       featured: true
     }
   ];

@@ -2,7 +2,7 @@ import React from 'react';
 import { Download, Linkedin, Mail, Github, ArrowRight } from 'lucide-react';
 import logistic1fundo from '../../assets/logistic1fundo.webp';
 import fotoperfil from '../../assets/essa.jpg';
-import curriculo from '../../assets/curriculo_teste.pdf';
+import curriculo from '../../assets/Currículo - Obedys Junio dos Santos Gois.pdf';
 
 const Hero = () => {
   return (
@@ -36,9 +36,9 @@ const Hero = () => {
             </h1>
 
             <h2 className="text-xl md:text-2xl text-steel-300 font-medium mb-6">
-              <span className="text-forest-400">Analista de Dados</span>
+              <span className="text-forest-400">Analista</span>
               <span className="text-steel-500 mx-2">|</span>
-              <span className="text-petrol-400">Logística & Operações</span>
+              <span className="text-petrol-400">Dados e Logística</span>
             </h2>
 
             <p className="text-lg text-steel-400 mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed">
@@ -66,7 +66,7 @@ const Hero = () => {
             </div>
 
             <div className="flex items-center justify-center md:justify-start gap-5 text-steel-500">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-forest-400 transition-colors p-2">
+              <a href="https://www.linkedin.com/in/obedys-junio-207315321/" target="_blank" rel="noopener noreferrer" className="hover:text-forest-400 transition-colors p-2">
                 <Linkedin size={22} />
               </a>
               <a href="https://github.com/ObedysGois" target="_blank" rel="noopener noreferrer" className="hover:text-forest-400 transition-colors p-2">

@@ -5,46 +5,64 @@ const Timeline = () => {
   const experiences = [
     {
       id: 1,
-      role: "Analista de Operações Logísticas – Transportes e Fretes",
+      role: "Encarregado de Logística Jr - Liderança | Análise de Dados",
       company: "Trielo",
       period: "2025 - Presente",
       location: "Salvador, BA",
-      description: "Atuação estratégica na liderança de processos logísticos e administrativos, com foco em inteligência de dados e otimização de recursos.",
+      description: "Atuação na liderança operacional e administrativa da logística, com foco em controle de custos, indicadores de performance, gestão de pessoas e suporte analítico à tomada de decisão.",
       achievements: [
-        "Análise de custos de fretes, DDE, produtividade operacional, devoluções e perdas.",
-        "Construção e acompanhamento de KPIs logísticos (Lead Time, OTIF, despesas por rota, custo por entrega)",
-        "Interface entre logística, fiscal e financeiro (CT-e, MDF-e, faturamento, canhotos e cobrança)",
-        "Planejamento orçamentário e reminder de desvios de custo",
-        "Desenvolvimento de dashboards em Power BI para tomada de decisão.",
-        "Automação de relatórios e rotinas de controle."
+        "Análise e controle de custos logísticos, incluindo fretes, produtividade operacional, perdas e devoluções, com visão integrada de Supply Chain Management (SCM).",
+        "Monitoramento e análise de KPI’s logísticos, como Lead Time, OTIF, custo por entrega, despesas por rota, logística reversa, Wrench Time e Cycle Time.",
+        "Atuação integrada entre Logística, Fiscal e Financeiro, com gestão do time nas rotinas de faturamento, conferência e lançamento de documentos fiscais (NF-e, CT-e, MDF-e, NFS-e, NFD-e), controle de canhotos e suporte à conciliação operacional e financeira.",
+        "Análise e gestão de estoques, incluindo DDE, rupturas, excessos e estoques em trânsito, apoiando Comercial e Compras na melhoria do nível de serviço e giro.",
+        "Planejamento orçamentário, acompanhamento de despesas operacionais e análise de desvios, com foco em redução de custos e eficiência.",
+        "Desenvolvimento de dashboards gerenciais e relatórios analíticos em Power BI e Excel, apoiando decisões estratégicas da operação.",
+        "Automação de relatórios e padronização de rotinas operacionais, reduzindo retrabalho e aumentando confiabilidade das informações.",
+        "Gestão da equipe de logística e administrativo, com foco em produtividade, cumprimento de prazos e melhoria contínua dos processos.",
+        "Definição e monitoramento de estoque mínimo e máximo, análise de giro, lead time de ressuprimento e acuracidade sistêmica x física (ERP).",
+        "Contratação e gestão de fretes terceirizados, negociação com fretistas e transportadoras, acompanhamento ponta a ponta das entregas e controle de janelas.",
+        "Gestão de performance de fretistas por meio de indicadores (OTIF, SLA, nível de serviço), análise de ocorrências, avarias e não conformidades.",
+        "Aplicação de métodos logísticos e de armazenagem (FIFO/PEPS, FEFO, picking, paletização, inventários e crossdocking), garantindo eficiência operacional."
       ]
     },
+
     {
       id: 2,
-      role: "Assistente de Logística PL",
+      role: "Assistente de Logística PL - Distribuição | Análise de Dados",
       company: "Trielo",
       period: "2024 - 2025",
       location: "Salvador, BA",
-      description: "Atuação estratégica na liderança de processos logísticos e administrativos, com foco em inteligência de dados e otimização de recursos.",
+      description: "Atuação na operação de distribuição e transporte, com foco em controle operacional, indicadores logísticos, análise de dados e suporte à gestão da performance.",
       achievements: [
-        "Promovido para posição de liderança devido à excelência na gestão de processos e implementação de melhorias.",
-        "Desenvolvimento de Dashboards em Power BI para monitoramento de KPIs de transportes e perdas, aumentando a visibilidade da operação.",
-        "Criação de aplicativos para gerenciamento de tarefas logísticas, reduzindo o tempo de resposta da equipe.",
-        "Gestão direta de indicadores de performance e implementação de planos de ação corretivos."
+        "Planejamento, execução e controle das operações de transporte e Last Mile (Outbound), assegurando cumprimento de prazos, qualidade do serviço e eficiência operacional.",
+        "Gestão e controle de fretes, operações de cross-docking e logística reversa (devoluções e ativos), com análise de causas e tratativas para redução de ocorrências.",
+        "Roteirização e monitoramento das entregas, atuando na otimização de rotas, redução de custos e melhoria do nível de serviço (OTIF).",
+        "Acompanhamento e análise de indicadores de desempenho logístico, como produtividade, lead time, devoluções e custos operacionais.",
+        "Apoio às rotinas de faturamento e gestão fiscal, incluindo conferência, lançamento e controle de documentos fiscais (DANFE, MDF-e, NFD-e).",
+        "Monitoramento de ocorrências logísticas, com interface junto a transportadoras e áreas internas para tratativas e ações corretivas.",
+        "Elaboração de relatórios operacionais e desenvolvimento de dashboards, automatizando informações para acompanhamento da performance logística.",
+        "Suporte às operações de Recebimento e Expedição, garantindo alinhamento entre programação logística, documentação e execução no pátio.",
+        "Aplicação da metodologia PDCA para resolução de problemas recorrentes em devoluções, atrasos e controle de ativos.",
+        "Apoio na estruturação e melhoria do processo de Last Mile Delivery, com foco em controle, visibilidade e eficiência operacional."
       ]
     },
+
     {
       id: 3,
-      role: "Assistente de Logística JR",
+      role: "Assistente de Logística JR - Administrativo | Distribuição",
       company: "Trielo",
       period: "2022 - 2024",
       location: "Salvador, BA",
-      description: "Responsável pela execução e padronização de rotinas operacionais, garantindo conformidade e eficiência nos processos.",
+      description: "Atuação administrativa na área de logística e distribuição, com foco no suporte às rotinas operacionais, fiscais e financeiras, garantindo organização, conformidade e fluidez dos processos.",
       achievements: [
-        "Desenvolvimento e implementação de POPs (Procedimentos Operacionais Padrão) para os setores de Logística Reversa, Transportes e Administrativo.",
-        "Aplicação da metodologia PDCA para resolução de problemas crônicos em devoluções e controle de ativos.",
-        "Estruturação do processo de Last Mile Delivery, otimizando o roteiro e o acompanhamento de entregas.",
-        "Redução de inconsistências nos registros de notas fiscais e controles de estoque através de novos procedimentos de validação."
+        "Atuação nas rotinas administrativas, logísticas, fiscais e financeiras, com suporte direto às áreas de compras e distribuição.",
+        "Emissão, conferência e lançamento de documentos fiscais de entrada e saída (DANFE, NF-e/NFS-e, CT-e, MDF-e, RPS e NFD-e), assegurando conformidade fiscal, operacional e documental.",
+        "Controle e acompanhamento de despesas operacionais, fretes e compras de suprimentos, com organização, validação e arquivamento de documentos fiscais e financeiros.",
+        "Acompanhamento e apoio na roteirização de entregas, controle de fretes, devoluções e ativos logísticos, garantindo rastreabilidade e organização da operação.",
+        "Elaboração e atualização de relatórios administrativos e operacionais, apoiando o controle de custos, prazos e indicadores básicos da logística.",
+        "Apoio às rotinas de faturamento, controle de canhotos, cobranças e organização de documentos para conciliação operacional e financeira.",
+        "Interface com fornecedores, transportadoras e áreas internas, auxiliando no alinhamento de informações e resolução de pendências administrativas.",
+        "Suporte às rotinas de controle interno, contribuindo para padronização de processos e melhoria da eficiência administrativa."
       ]
     },
     {
@@ -60,8 +78,21 @@ const Timeline = () => {
         "Atendimento a fornecedores e clientes internos, garantindo fluxo de informações eficiente.",
         "Apoio na elaboração de planilhas de controle para o setor financeiro."
       ]
-    }
+    },
+    {
+      id: 5,
+      role: "Jovem Aprendiz - Administrativo | PCM",
+      company: "Xerox do Brasil",
+      period: "2014 - 2015",
+      location: "Simões Filho, BA",
+      description: "Apoio administrativo no Planejamento e Controle da Manutenção.",
+      achievements: [
+        "Apoio no controle de ordens de serviço, atualização de sistemas e planilhas, organização de documentos técnicos e suporte às rotinas administrativas da manutenção.",
+        "Acompanhamento de indicadores de manutenção, auxílio no planejamento de atividades, controle de registros e apoio à melhoria dos processos, contribuindo para a organização, eficiência e controle das rotinas da área de PCM."
+      ]
+    },
   ];
+
 
   return (
     <div className="py-24 bg-graphite-950 bg-grid-pattern">
