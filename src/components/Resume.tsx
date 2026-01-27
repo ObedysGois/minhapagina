@@ -26,7 +26,7 @@ const Resume = () => {
             </p>
 
             <p className="text-lg text-steel-300 leading-relaxed mb-8">
-              <strong className="text-steel-200">Analista de Logística (Transportes e Operações)</strong>, com sólida experiência em
+              <strong className="text-steel-200">Especialista em Logística (Transportes e Operações)</strong>, com sólida experiência em
               <strong className="text-steel-200"> gestão de custos logísticos</strong>, incluindo fretes, produtividade operacional,
               perdas e devoluções, atuando com visão integrada de <strong className="text-steel-200">Supply Chain Management (SCM)</strong>.
               Forte atuação no monitoramento e análise de <strong className="text-steel-200">KPI’s logísticos</strong>, como Lead Time,

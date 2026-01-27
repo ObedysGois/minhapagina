@@ -5,13 +5,20 @@ const Studies = () => {
   const education = [
     {
       id: 1,
+      degree: "Tecnólogo em Logística",
+      institution: "Uninter",
+      period: "2026 - 2029 (Em andamento)",
+      description: "Foco em gestão de transportes, armazenagem, cadeia de suprimentos e otimização de processos logísticos."
+    },
+    {
+      id: 2,
       degree: "Tecnologia em Análise e Desenvolvimento de Sistemas",
-      institution: "IFBA - Instituto Federal da Bahia",
+      institution: "Uninter",
       period: "2025 - 2028 (Em andamento)",
       description: "Foco em engenharia de software, banco de dados, inteligência artificial e gestão de projetos tecnológicos."
     },
     {
-      id: 2,
+      id: 3,
       degree: "Técnico em Manutenção Mecânica Industrial",
       institution: "IFBA - Instituto Federal da Bahia",
       period: "2014 - 2016",

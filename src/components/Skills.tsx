@@ -8,55 +8,158 @@ const Skills = () => {
       icon: Database,
       color: "forest",
       skills: [
-        { name: "TOTVS Protheus", level: 90 },
-        { name: "SAP (Conceitos)", level: 60 },
-        { name: "WMS / TMS", level: 85 },
-        { name: "Gestão de Ativos", level: 80 }
+        { name: "ERP TOTVS Protheus", level: 90 },
+        { name: "TOTVS RM", level: 70 },
+        { name: "System GLPI", level: 80 },
+        { name: "QIVE Arquivei", level: 85 },
+        { name: "Treasy (Planejamento Financeiro)", level: 70 },
+        { name: "Portal IFCO", level: 70 }
       ]
     },
     {
-      title: "Business Intelligence",
+      title: "Business Intelligence & Dados",
       icon: Brain,
       color: "petrol",
       skills: [
-        { name: "Power BI", level: 85 },
-        { name: "DAX & M Query", level: 75 },
-        { name: "Excel Avançado (VBA)", level: 90 },
-        { name: "SQL Server", level: 65 }
+        { name: "Power BI", level: 70 },
+        { name: "Dashboards Interativos", level: 80 },
+        { name: "Desenvolvimento de Relatórios Gerenciais", level: 80 },
+        { name: "Análise e Interpretação de Dados", level: 80 },
+        { name: "Excel Avançado", level: 90 },
+        { name: "Google Sheets", level: 75 }
       ]
     },
     {
-      title: "Automação & Soluções Digitais",
+      title: "Automação, IA & Desenvolvimento",
       icon: Code,
       color: "steel",
       skills: [
-        { name: "JavaScript / TypeScript", level: 60 },
-        { name: "React.js", level: 55 },
-        { name: "Python (Automação)", level: 50 },
-        { name: "Power Automate", level: 70 }
+        { name: "Automação de Tarefas", level: 70 },
+        { name: "Inteligência Artificial (Aplicações Práticas)", level: 75 },
+        { name: "Desenvolvimento de Sistemas", level: 80 },
+        { name: "Desenvolvimento de Aplicativos (APPs)", level: 80 },
+        { name: "GitHub (Versionamento)", level: 75 },
+        { name: "IDE (VS Code)", level: 75 }
       ]
     },
     {
-      title: "Processos & Gestão",
+      title: "Ferramentas & Produtividade",
+      icon: Settings,
+      color: "petrol",
+      skills: [
+        { name: "Word", level: 75 },
+        { name: "PowerPoint", level: 75 },
+        { name: "Google Docs", level: 75 },
+        { name: "Google Drive", level: 80 },
+        { name: "Google Meet", level: 70 },
+        { name: "Google Forms", level: 80 },
+      ]
+    },
+    {
+      title: "Gestão & Performance Logística",
       icon: Settings,
       color: "forest",
       skills: [
-        { name: "BPMN (Mapeamento)", level: 80 },
-        { name: "Metodologia Ágil (Scrum)", level: 70 },
-        { name: "PDCA / DMAIC", level: 85 },
-        { name: "KPIs & OKRs", level: 80 }
+        { name: "Gestão de Performance Logística", level: 65 },
+        { name: "KPIs Operacionais", level: 85 },
+        { name: "Controle de Custos Logísticos", level: 75 }
+      ]
+    },
+    {
+      title: "Melhoria Contínua & Qualidade",
+      icon: Settings,
+      color: "forest",
+      skills: [
+        { name: "Ciclo PDCA", level: 75 },
+        { name: "Metodologia 5S", level: 70 },
+        { name: "Padronização de Processos Operacionais", level: 70 },
+      ]
+    },
+    {
+      title: "Gestão de Projetos & Processos",
+      icon: Settings,
+      color: "forest",
+      skills: [
+        { name: "Gestão de Projetos", level: 70 },
+        { name: "Mapeamento e Otimização de Processos", level: 75 },
+        { name: "Análise de Gargalos Operacionais", level: 75 }
+      ]
+    },
+    {
+      title: "Gestão de Estoques",
+      icon: Settings,
+      color: "forest",
+      skills: [
+        { name: "Planejamento e Controle de Estoques", level: 60 },
+        { name: "Gestão de Inventários", level: 65 },
+        { name: "Controle de Ativos", level: 75 }
+      ]
+    },
+    {
+      title: "Armazenagem & Operações de CD",
+      icon: Settings,
+      color: "forest",
+      skills: [
+        { name: "Gestão de Armazenagem", level: 60 },
+        { name: "Separação (Picking) e Conferência", level: 60 },
+        { name: "Recebimento e Conferência de Mercadorias", level: 70 }
+      ]
+    },
+    {
+      title: "Expedição & Distribuição",
+      icon: Settings,
+      color: "forest",
+      skills: [
+        { name: "Expedição e Distribuição", level: 85 },
+        { name: "Gestão de Transporte (Inbound / Outbound)", level: 90 },
+        { name: "Cross Docking", level: 60 }
+      ]
+    },
+    {
+      title: "Logística Reversa",
+      icon: Settings,
+      color: "forest",
+      skills: [
+        { name: "Logística Reversa", level: 80 },
+        { name: "Controle de Devoluções", level: 85 },
+        { name: "Controle de Recolhimento", level: 70 }
+      ]
+    },
+    {
+      title: "Processos Fiscais & Faturamento",
+      icon: Settings,
+      color: "forest",
+      skills: [
+        { name: "Controle de Notas Fiscais e CFOP", level: 50 },
+        { name: "Fluxo de Faturamento", level: 85 },
+        { name: "Controle de Canhotos", level: 85 }
       ]
     }
   ];
 
+
   const softSkills = [
+    "Proatividade",
     "Resolução de Problemas",
-    "Comunicação Assertiva",
-    "Pensamento Analítico",
-    "Trabalho em Equipe",
-    "Liderança Técnica",
-    "Adaptabilidade"
+    "Pensamento Analítico e Crítico",
+    "Tomada de Decisão Orientada a Dados",
+    "Autonomia",
+    "Escuta Ativa",
+    "Empatia",
+    "Resiliência",
+    "Liderança e Liderança Transformacional",
+    "Trabalho em Equipe e Colaboração",
+    "Organização e Gestão do Tempo",
+    "Foco em Resultados",
+    "Visão Sistêmica",
+    "Adaptabilidade e Flexibilidade",
+    "Capacidade de Aprendizado Contínuo",
+    "Inovação",
+    "Atenção a Detalhes",
+    "Comunicação Clara",
+    "Perfil Hands-on"
   ];
+
 
   const getProgressColor = (color: string) => {
     switch (color) {
@@ -83,7 +186,7 @@ const Skills = () => {
           </h2>
           <div className="section-divider mb-8"></div>
           <p className="text-lg text-steel-400 max-w-3xl">
-            Um conjunto equilibrado de competências técnicas e comportamentais focadas em
+            Um conjunto equilibrado de competências técnicas focadas em
             entregar valor e inovação para o negócio.
           </p>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Linkedin, Github, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Github, Send, User } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -15,14 +15,12 @@ const Contact = () => {
             <div className="section-divider mb-8"></div>
 
             <p className="text-lg text-steel-300 mb-10 leading-relaxed">
-              Estou sempre em busca de novos desafios e oportunidades para aplicar minha experiência
-              em análise de dados e otimização logística. Se sua empresa busca eficiência e inovação,
-              entre em contato.
+              Atuo na transformação de dados em decisões que aumentam a eficiência logística e a performance operacional. Se sua empresa busca inovação com foco em resultados e otimização de processos, estou aberto a novas oportunidades e parcerias.
             </p>
 
             <div className="space-y-4">
               <a
-                href="mailto:obedysjunio@email.com"
+                href="mailto:obedysjunio13@gmail.com"
                 className="flex items-center gap-4 p-4 card-corporate group"
               >
                 <div className="p-2.5 bg-forest-900/40 rounded-lg group-hover:bg-forest-900/60 transition-colors">
@@ -30,7 +28,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-xs font-medium text-steel-500 uppercase tracking-wider">Email</h3>
-                  <p className="text-base font-medium text-steel-100">obedysjunio@email.com</p>
+                  <p className="text-base font-medium text-steel-100">obedysjunio13@gmail.com</p>
                 </div>
               </a>
 
@@ -44,6 +42,7 @@ const Contact = () => {
                 <div>
                   <h3 className="text-xs font-medium text-steel-500 uppercase tracking-wider">Telefone / WhatsApp</h3>
                   <p className="text-base font-medium text-steel-100">+55 (47) 9 9922-6394</p>
+                  <p className="text-base font-medium text-steel-100">+55 (71) 9 8624-0067</p>
                 </div>
               </a>
 
@@ -53,19 +52,27 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-xs font-medium text-steel-500 uppercase tracking-wider">Localização</h3>
-                  <p className="text-base font-medium text-steel-100">Joinville, SC - Brasil</p>
+                  <p className="text-base font-medium text-steel-100">Costa e Silva, Joinville-SC, Brasil</p>
                 </div>
               </div>
             </div>
 
             <div className="mt-8 flex gap-3">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/obedys-junio-207315321/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 py-3 bg-petrol-700 hover:bg-petrol-600 text-white rounded font-medium flex items-center justify-center gap-2 transition-colors"
               >
                 <Linkedin size={18} /> LinkedIn
+              </a>
+              <a
+                href="https://minhapagina-7hbb.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 py-3 bg-petrol-700 hover:bg-petrol-600 text-white rounded font-medium flex items-center justify-center gap-2 transition-colors"
+              >
+                <User size={18} /> Page Pessoal
               </a>
               <a
                 href="https://github.com/ObedysGois"
@@ -106,7 +113,9 @@ const Contact = () => {
                 <select className="w-full bg-graphite-950 border border-steel-700 rounded px-4 py-3 text-steel-100 focus:outline-none focus:border-forest-500 transition-colors text-sm">
                   <option>Oportunidade de Trabalho</option>
                   <option>Consultoria / Projeto</option>
+                  <option>Desenvolvimento de Sistemas</option>
                   <option>Networking</option>
+                  <option>Parceria</option>
                   <option>Outro</option>
                 </select>
               </div>

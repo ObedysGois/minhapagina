@@ -36,7 +36,7 @@ const Hero = () => {
             </h1>
 
             <h2 className="text-xl md:text-2xl text-steel-300 font-medium mb-6">
-              <span className="text-forest-400">Analista</span>
+              <span className="text-forest-400">Especialista</span>
               <span className="text-steel-500 mx-2">|</span>
               <span className="text-petrol-400">Dados e Logística</span>
             </h2>

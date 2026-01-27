@@ -64,7 +64,7 @@ function App() {
                 Obedys Júnio
               </span>
               <span className="hidden sm:inline-block ml-3 text-xs text-steel-500 font-medium uppercase tracking-wider">
-                Analista de Logística
+                Especialista em Dados & Logística
               </span>
             </div>
 
@@ -78,8 +78,8 @@ function App() {
                       key={item.id}
                       onClick={() => scrollToSection(item.id)}
                       className={`px-4 py-2 rounded text-sm font-medium transition-all duration-200 ${isActive
-                          ? 'bg-steel-800/50 text-forest-400'
-                          : 'text-steel-400 hover:text-steel-100 hover:bg-steel-800/30'
+                        ? 'bg-steel-800/50 text-forest-400'
+                        : 'text-steel-400 hover:text-steel-100 hover:bg-steel-800/30'
                         }`}
                     >
                       {item.label}
@@ -112,8 +112,8 @@ function App() {
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
                     className={`block px-3 py-3 rounded text-base font-medium transition-all duration-200 w-full text-left ${isActive
-                        ? 'bg-steel-800/50 text-forest-400 border-l-2 border-forest-500'
-                        : 'text-steel-400 hover:bg-steel-800/30 hover:text-steel-100'
+                      ? 'bg-steel-800/50 text-forest-400 border-l-2 border-forest-500'
+                      : 'text-steel-400 hover:bg-steel-800/30 hover:text-steel-100'
                       }`}
                   >
                     {item.label}

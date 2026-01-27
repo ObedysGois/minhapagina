@@ -7,10 +7,17 @@ const Ticker = () => {
         { text: 'Performance Operacional', icon: TrendingUp },
         { text: 'KPIs & Indicadores', icon: BarChart3 },
         { text: 'Análise de Dados', icon: PieChart },
-        { text: 'BI & Dashboards', icon: Target },
+        { text: 'BI & Dashboards (Power BI)', icon: Target },
         { text: 'Automação de Processos', icon: Cog },
-        { text: 'Supply Chain', icon: Package },
-        { text: 'Custos & Eficiência', icon: Workflow },
+        { text: 'Sistemas ERP', icon: Package },
+        { text: 'Gestão de Transporte', icon: Truck },
+        { text: 'Controle de Custos Logísticos', icon: Workflow },
+        { text: 'Conhecimento em Faturamento & CFOP', icon: Workflow },
+        { text: 'Conhecimento em Rotinas de Estoque', icon: Package },
+        { text: 'Melhoria Contínua (PDCA / 5S)', icon: TrendingUp },
+        { text: 'Mapeamento de Processos', icon: Cog },
+        { text: 'Dashboards Interativos', icon: BarChart3 },
+        { text: 'Automação com IA', icon: Cog }
     ];
 
     // Duplicate items for seamless loop
