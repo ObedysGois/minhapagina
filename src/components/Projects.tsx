@@ -87,6 +87,48 @@ import checkpeso12 from '../../assets/checkpeso12.png';
 import checkpeso13 from '../../assets/checkpeso13.png';
 import checkpeso14 from '../../assets/checkpeso14.png';
 import checkpeso15 from '../../assets/checkpeso15.png';
+import rota1 from '../../assets/rota1.png';
+import rota2 from '../../assets/rota2.png';
+import rota3 from '../../assets/rota3.png';
+import rota4 from '../../assets/rota4.png';
+import rota5 from '../../assets/rota5.png';
+import rota6 from '../../assets/rota6.png';
+import rota7 from '../../assets/rota7.png';
+import rota8 from '../../assets/rota8.png';
+import rota9 from '../../assets/rota9.png';
+import rota10 from '../../assets/rota10.png';
+import help1 from '../../assets/help1.png';
+import help2 from '../../assets/help2.png';
+import help3 from '../../assets/help3.png';
+import help4 from '../../assets/help4.png';
+import help5 from '../../assets/help5.png';
+import help6 from '../../assets/help6.png';
+import help7 from '../../assets/help7.png';
+import help8 from '../../assets/help8.png';
+import help9 from '../../assets/help9.png';
+import help10 from '../../assets/help10.png';
+import help11 from '../../assets/help11.png';
+import help12 from '../../assets/help12.png';
+import help13 from '../../assets/help13.png';
+import help14 from '../../assets/help14.png';
+import dev1 from '../../assets/dev1.png';
+import dev2 from '../../assets/dev2.png';
+import dev3 from '../../assets/dev3.png';
+import dev4 from '../../assets/dev4.png';
+import dev5 from '../../assets/dev5.png';
+import dev6 from '../../assets/dev6.png';
+import dev7 from '../../assets/dev7.png';
+import dev8 from '../../assets/dev8.png';
+import dev9 from '../../assets/dev9.png';
+import dev10 from '../../assets/dev10.png';
+import dev15 from '../../assets/dev15.png';
+import dev16 from '../../assets/dev16.png';
+import dev17 from '../../assets/dev17.png';
+import dev18 from '../../assets/dev18.png';
+import dev19 from '../../assets/dev19.png';
+import dev20 from '../../assets/dev20.png';
+import dev21 from '../../assets/dev21.png';
+
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
@@ -283,7 +325,146 @@ const Projects = () => {
       icon: BarChart4,
       demoUrl: "https://apppesagem.vercel.app/",
       featured: true
-    }
+    },
+    {
+      id: 16,
+      title: "Roteiriza – Sistema de Roteirização Inteligente",
+      description: "Sistema Web corporativo para planejamento, otimização e monitoramento de rotas logísticas.",
+      fullDescription: `
+    Sistema Web desenvolvido para planejamento e otimização inteligente de rotas logísticas, com foco em eficiência operacional, padronização de processos e visibilidade do last mile.
+    
+    A plataforma permite o cadastro e a consolidação de pedidos, clientes, filiais, veículos e motoristas, realizando o agrupamento automático das entregas com base em critérios como região, distância, volume, prioridade e capacidade operacional.
+    
+    Utiliza integração com APIs de mapas e geolocalização para cálculo otimizado de rotas, estimativa de tempo de deslocamento e sequenciamento inteligente de paradas, reduzindo deslocamentos improdutivos e melhorando o nível de serviço.
+    
+    O sistema conta com dashboards operacionais em tempo real, acompanhamento do status das rotas, indicadores de produtividade e performance de entrega, além da geração de relatórios gerenciais em PDF, HTML e Excel.
+    
+    Possui integração para envio automatizado de roteiros, atualizações de status e relatórios via e-mail e WhatsApp, além de armazenamento de registros e evidências operacionais, garantindo rastreabilidade e histórico das operações.
+      `,
+      problem: "Planejamento de rotas realizado de forma manual ou descentralizada, gerando baixa eficiência operacional e pouca visibilidade do last mile.",
+      solution: "Roteirização inteligente com otimização automática, monitoramento em tempo real e análise de desempenho por rota, veículo, motorista e filial.",
+      image: rota2,
+      images: [
+        rota1,
+        rota2,
+        rota3,
+        rota4,
+        rota5,
+        rota6,
+        rota7,
+        rota8,
+        rota9,
+        rota10
+      ],
+      technologies: [
+        "React",
+        "Node.js",
+        "TypeScript",
+        "Supabase",
+        "Google Maps API",
+        "Tailwind CSS",
+        "Google Drive"
+      ],
+      category: "Sistema Web Corporativo",
+      icon: BarChart4,
+      demoUrl: "https://appderoteirosnew.vercel.app/",
+      featured: true
+    },
+    {
+      id: 17,
+      title: "HelpDeskNF – Sistema Web de Chamados Fiscais",
+      description: "Sistema Web corporativo para gestão de solicitações fiscais, correções, cancelamentos e faturamento de notas fiscais.",
+      fullDescription: `
+    Sistema Web desenvolvido para centralizar e padronizar o fluxo de solicitações relacionadas a documentos fiscais, como correções de notas fiscais, cancelamentos e solicitações de faturamento.
+    
+    A plataforma permite a abertura de chamados por usuários internos, com categorização por tipo de solicitação, filial, cliente e prioridade, garantindo organização, rastreabilidade e histórico completo das demandas fiscais.
+    
+    O sistema possui controle de status dos chamados, registros de interações, anexos de documentos e acompanhamento do SLA, permitindo maior transparência entre áreas solicitantes e o time fiscal.
+    
+    Conta com dashboards operacionais e gerenciais para acompanhamento do volume de chamados, tempo de atendimento, tipos de solicitações e pendências, além da geração de relatórios em PDF, HTML e Excel para auditoria e gestão.
+    
+    Inclui notificações automáticas via e-mail e WhatsApp a cada atualização do chamado, assegurando comunicação ágil, redução de retrabalho e maior controle sobre os processos fiscais.
+      `,
+      problem: "Solicitações fiscais realizadas de forma informal, sem controle, histórico ou priorização, gerando atrasos e riscos operacionais.",
+      solution: "Centralização das demandas fiscais em um sistema de chamados com rastreabilidade, controle de status, indicadores de atendimento e comunicação automatizada.",
+      image: help7,
+      images: [
+        help1,
+        help2,
+        help3,
+        help4,
+        help6,
+        help7,
+        help9,
+        help10,
+        help11,
+        help12,
+        help13,
+        help14
+      ],
+      technologies: [
+        "React",
+        "Node.js",
+        "TypeScript",
+        "Supabase",
+        "Tailwind CSS"
+      ],
+      category: "Sistema Web Corporativo",
+      icon: BarChart4,
+      demoUrl: "https://help-desk-nf.vercel.app/",
+      featured: true
+    },
+    {
+      id: 18,
+      title: "Gestão de Devoluções – Sistema de tratativas",
+      description: "Sistema Web corporativo para gestão integrada de devoluções, tratativas comerciais e logísticas de notas fiscais emitidas por clientes.",
+      fullDescription: `
+    Sistema Web desenvolvido para centralizar e padronizar o processo de gestão de devoluções de mercadorias, integrando as áreas comercial, logística e fiscal em um único fluxo operacional.
+    
+    A plataforma permite o registro, acompanhamento e tratamento das notas fiscais de devolução emitidas por clientes, possibilitando que vendedores e equipes de logística realizem as tratativas de forma estruturada, com histórico completo e rastreabilidade das decisões.
+    
+    Conta com integração direta com bancos de dados operacionais, garantindo atualização em tempo real do status das devoluções, volumes envolvidos, motivos e impactos operacionais, reduzindo retrabalho e inconsistências de informação.
+    
+    O sistema oferece dashboards analíticos e operacionais para acompanhamento das devoluções por cliente, produto, vendedor, filial e período, além da geração de relatórios gerenciais em PDF, HTML e Excel para apoio à tomada de decisão.
+    
+    Inclui funcionalidades de compartilhamento e notificações automáticas via e-mail e WhatsApp, permitindo comunicação ágil entre as áreas envolvidas e maior controle sobre prazos, pendências e tratativas em andamento.
+      `,
+      problem: "Processo de devoluções descentralizado, com baixa visibilidade, comunicação fragmentada entre áreas e ausência de controle estruturado das tratativas.",
+      solution: "Centralização do fluxo de devoluções em um sistema integrado, com atualização em tempo real, dashboards analíticos e comunicação automatizada entre vendas e logística.",
+      image: dev2,
+      images: [
+        dev1,
+        dev2,
+        dev3,
+        dev4,
+        dev5,
+        dev6,
+        dev7,
+        dev8,
+        dev9,
+        dev10,
+        dev15,
+        dev16,
+        dev17,
+        dev18,
+        dev19,
+        dev20,
+        dev21
+      ],
+      technologies: [
+        "React",
+        "Next.js",
+        "Node.js",
+        "TypeScript",
+        "Supabase",
+        "Google Drive",
+        "Tailwind CSS"
+      ],
+      category: "Sistema Web Corporativo",
+      icon: BarChart4,
+      demoUrl: "https://gestaodevolucao-gdm.netlify.app/",
+      featured: true
+    }    
   ];
 
   const openModal = (project: any) => {
